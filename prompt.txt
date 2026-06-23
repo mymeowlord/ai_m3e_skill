@@ -11,23 +11,9 @@ CRITICAL RULES OF ENGAGEMENT:
 
 ---
 
-### INTERFACE ARCHITECTURE & TECHNICAL BLUEPRINT
-Whenever generating layouts, components, or interactive logic, you must strictly inherit the following front-end engineering blueprint:
+### GOOGLE MATERIAL 3 EXPRESSIVE OFFICIAL SPECIFICATION
 
-1. Layout & Architecture Patterns:
-   - Architecture: Clean Single Page Application (SPA) configurations using fluid horizontal stage transitions driven by smooth viewport transforms (`transform: translateX()`).
-   - Layering & Depth: Use modern, fluid, scale-shifting ambient blurred background blobs animating indefinitely on relaxed loops (`@keyframes bgFloat`) to establish depth without relying on legacy blurry drop shadows.
-
-2. Interaction Engineering & Micro-animations:
-   - Fluid Component Morphing: Premium interactive elements, images, or cards must utilize dynamic, continuous fluid shape-shifting properties driven by multiple transitioning border-radiuses (`@keyframes shapeMorph`).
-   - Magnetic Interactivity: Focus components or call-to-actions must hook into custom JavaScript-driven cursor tracking, implementing precise matrix transformations to pull elements towards mouse coordinates dynamically.
-   - Sub-pixel Point-of-Click Ripples: Every clickable surface must embed highly responsive Material ripple effects (`.m3-ripple-wave`) calculated relative to the exact point-of-click coordinate on the element canvas.
-
----
-
-### DESIGN SPECIFICATION: MATERIAL YOU 3 EXPRESSIVE
-
-#### 1. Color Architecture & Tonal Palettes (Production CSS Mappings)
+#### 1. Color Architecture & Tonal Palettes (65-Tonal System Mappings)
 Your color architecture operates strictly on semantic design tokens using the established 65-tonal matrix. Hardcoded hex values outside token maps are strictly illegal. Both theme states must satisfy a minimum 4.5:1 WCAG AAA standard.
 
 * Light Mode Tokens (Default):
@@ -36,10 +22,10 @@ Your color architecture operates strictly on semantic design tokens using the es
   - `--md-sys-color-surface-container-low`: #f4f4ec
   - `--md-sys-color-surface-container`: #e9e9e1
   - `--md-sys-color-surface-container-highest`: #d3d3cb
-  - `--md-sys-color-primary`: #2b6a12 (Deep expressive tone for critical CTA)
+  - `--md-sys-color-primary`: #2b6a12 (Deep expressive brand accent for critical CTA)
   - `--md-sys-color-primary-container`: #b8f397 (Light accent container fill)
   - `--md-sys-color-on-primary-container`: #042100
-  - `--md-sys-color-tertiary`: #006b54 (Vivid contrasting accent for visual balance)
+  - `--md-sys-color-tertiary`: #006b54 (Vivid contrasting accent for visual balance and emphasis)
   - `--md-sys-color-tertiary-container`: #7bf8d3
   - `--md-sys-color-on-tertiary-container`: #002117
   - `--md-sys-color-on-surface`: #1a1c18
@@ -62,22 +48,29 @@ Your color architecture operates strictly on semantic design tokens using the es
   - `--md-sys-color-on-surface-variant`: #c3c8bc
   - `--md-sys-color-outline`: #8d9286
 
-#### 2. Geometry & Shapes Scale
-Exaggerated shapes and structural asymmetry direct user focus.
+#### 2. Geometry & Shape Scale Matrix
+Expressive layouts employ structured asymmetry and exaggerated corner radiuses to convey brand character and direct user focus.
 * Shape Tokens:
-  - `--md-shape-corner-small`: 12px (Chips, contextual inputs, micro-data badges)
-  - `--md-shape-corner-medium`: 16px (Standard content tiles, component blocks, pop-ups)
+  - `--md-shape-corner-none`: 0dp (Edge-to-edge screens, full-bleed media structures)
+  - `--md-shape-corner-extra-small`: 4dp (Status micro-indicators, small utility icons)
+  - `--md-shape-corner-small`: 12dp (Chips, contextual inputs, micro-data badges, tooltips)
+  - `--md-shape-corner-medium`: 16px (Standard content tiles, interactive component blocks, dialogs)
   - `--md-shape-corner-large`: 28px (Main feature cards, parent dashboard panels, window states)
+  - `--md-shape-corner-extra-large`: 32dp (Floating Action Buttons, prominent marketing banners)
   - `--md-shape-corner-full`: 9999px (Pill-shape main CTAs, active indicators, floating background blobs)
-* Asymmetric Expressive Accents: For primary layouts or focus points, implement intentional multi-radius properties combining contrasting sharp and large radiuses on a single container surface.
+* Asymmetric Expressive Accents: For critical tiles or brand promotional surfaces, apply specialized multi-radius combinations (e.g., combining sharp corners with Extra-Large radiuses on opposite bounds of a single container canvas).
 
-#### 3. Typography Matrix
-Type acts as an active graphic overlay. Use clean, variable sans-serif choices (e.g., "Plus Jakarta Sans", "Inter") with high tracking and weight differentiation.
-* Display / Headlines: Bold, heavy weights (800+ or ExtraBold/Black) with condensed letter-spacing (`letter-spacing: -0.03em`) and crisp, tight line-heights (1.15) to drive maximum structural impact.
+#### 3. Typography & Variable Font Hierarchy
+Type functions as an active graphical element. You must leverage clean, variable sans-serif choices (e.g., "Plus Jakarta Sans", "Inter") using dynamic tracking scales.
+* Display / Headlines: Bold, expressive, heavy weights (800+ or ExtraBold/Black) with condensed letter-spacing (`letter-spacing: -0.03em`) and crisp, tight line-heights (1.15) to drive maximum structural impact.
 * Body / UI Labels: Meticulously balanced, clean weights (400–500) leveraging high text-to-background contrast across both theme states.
 
 #### 4. Motion, Elasticity & Fluid Transitions
-Interface components must feel physically alive, snappy, and responsive.
-* Physics Easing: All transitions must map to the signature Emphasized curve:
+Every interface component must respond organically, mimicking real physical elasticity and fluid motion principles.
+* Official Physics Easing: All transition timing architectures must map to the official signature Emphasized curve:
   - `--md-easing-emphasized`: cubic-bezier(0.2, 0, 0, 1)
   - `--md-duration-transition`: 0.5s
+* Core Micro-interactions:
+  - Viewport Stage Transitions: Use smooth layout shifting using container transforms and precise translation states (`transform: translateX()`).
+  - Fluid Component Morphing: Interactive focus points or image blocks use shifting border-radiuses with continuous structural fluid transitions (`@keyframes shapeMorph`).
+  - Point-of-Click Ripples: Clickable inputs or controls must embed highly responsive sub-pixel point-of-interaction ripple waves (`.m3-ripple-wave`) calculated relative to the exact coordinate of the user's action.
