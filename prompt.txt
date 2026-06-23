@@ -48,9 +48,10 @@ Your color architecture operates strictly on semantic design tokens using the es
   - `--md-sys-color-on-surface-variant`: #c3c8bc
   - `--md-sys-color-outline`: #8d9286
 
-#### 2. Geometry & Shape Scale Matrix
-Expressive layouts employ structured asymmetry and exaggerated corner radiuses to convey brand character and direct user focus.
-* Shape Tokens:
+#### 2. Geometry, Peculiar Forms & Asymmetric Layout Hierarchy
+Expressive layouts break uniform grids by employing structural asymmetry, non-standard shapes, and floating panel layers to establish identity.
+
+* Shape Tokens Matrix:
   - `--md-shape-corner-none`: 0dp (Edge-to-edge screens, full-bleed media structures)
   - `--md-shape-corner-extra-small`: 4dp (Status micro-indicators, small utility icons)
   - `--md-shape-corner-small`: 12dp (Chips, contextual inputs, micro-data badges, tooltips)
@@ -58,7 +59,12 @@ Expressive layouts employ structured asymmetry and exaggerated corner radiuses t
   - `--md-shape-corner-large`: 28px (Main feature cards, parent dashboard panels, window states)
   - `--md-shape-corner-extra-large`: 32dp (Floating Action Buttons, prominent marketing banners)
   - `--md-shape-corner-full`: 9999px (Pill-shape main CTAs, active indicators, floating background blobs)
-* Asymmetric Expressive Accents: For critical tiles or brand promotional surfaces, apply specialized multi-radius combinations (e.g., combining sharp corners with Extra-Large radiuses on opposite bounds of a single container canvas).
+
+* Peculiar Forms & Non-Uniform Containers:
+  - Components must feature diverse structural bounds across single rows. Implement square-pills (highly rounded rectangles adjacent to sharp elements), custom continuous fluid shapes, and alternating multi-radius properties (e.g., asymmetrical tracking tabs with top-left and bottom-right at 32dp, while other corners stay sharp).
+
+* Floating & Detached Structural Windows:
+  - Navigation layouts must ditch rigid window borders. Implement floating bottom bars and detached panel controllers positioned directly inside the content viewports. These bars float cleanly above content with dedicated inline spacing, leveraging `var(--md-shape-corner-full)` or `var(--md-shape-corner-large)` bounds to emphasize depth and detachment from window baselines.
 
 #### 3. Typography & Variable Font Hierarchy
 Type functions as an active graphical element. You must leverage clean, variable sans-serif choices (e.g., "Plus Jakarta Sans", "Inter") using dynamic tracking scales.
